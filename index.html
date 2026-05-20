@@ -219,7 +219,8 @@
             transition: all var(--transition-smooth);
             background: transparent;
         }
-        .navbar.scrolled {
+        .navbar.scrolled,
+        .navbar.subpage {
             background: var(--nav-bg);
             padding: 10px 40px;
             box-shadow: var(--shadow-lg);
@@ -299,13 +300,14 @@
             flex-direction: column;
             cursor: pointer;
             gap: 6px;
-            z-index: 10001;
+            z-index: 10005;
             padding: 8px;
+            position: relative;
         }
         .hamburger span {
             width: 30px;
             height: 3px;
-            background: #fff;
+            background: var(--secondary);
             border-radius: 3px;
             transition: all var(--transition);
             display: block;
@@ -1209,6 +1211,7 @@
         .lightbox.active {
             opacity: 1;
             visibility: visible;
+        }
         .lightbox img,
         .lightbox video {
             max-width: 90%;
@@ -1356,7 +1359,8 @@
             .navbar {
                 padding: 12px 20px;
             }
-            .navbar.scrolled {
+            .navbar.scrolled,
+            .navbar.subpage {
                 padding: 8px 20px;
             }
             .hero-btns {
@@ -2007,6 +2011,14 @@
                 document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
                 const target = document.getElementById('page-' + page);
                 if (target) target.classList.add('active');
+                
+                // Toggle subpage class on navbar for consistent dark background on subpages
+                if (page === 'home') {
+                    navbar.classList.remove('subpage');
+                } else {
+                    navbar.classList.add('subpage');
+                }
+                
                 document.querySelectorAll('.nav-menu a[data-page]').forEach(a => a.classList.remove('active'));
                 const navLink = document.querySelector(`.nav-menu a[data-page="${page}"]`);
                 if (navLink) navLink.classList.add('active');
