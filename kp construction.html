@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KP Construction - Premium Construction Company specializing in Residential, Commercial, and Industrial projects. Building modern infrastructure with 15+ years of experience.">
+    <meta name="keywords" content="construction, building, KP Construction, residential, commercial, renovation, architecture, smart homes, India">
+    <meta name="author" content="KP Construction">
+    <meta property="og:title" content="KP Construction - Building Modern Infrastructure">
+    <meta property="og:description" content="Premium construction company with 250+ completed projects. Expert engineers, premium materials, and modern technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/proj_img9.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.kpconstruction.com/">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <title>KP Construction Company Private Limited | Premium Construction Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --secondary: #F59E0B;
+            --accent: #1E293B;
+            --bg: #F8FAFC;
+            --text: #111827;
+            --text-light: #4B5563;
+            --white: #FFFFFF;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --nav-bg: rgba(15, 23, 42, 0.95);
+            --hero-overlay: rgba(15, 23, 42, 0.75);
+            --gradient-gold: linear-gradient(135deg, #F59E0B, #D97706);
+            --gradient-dark: linear-gradient(135deg, #0F172A, #1E293B);
+            --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+            --radius-sm: 12px;
+            --radius: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+            --font-poppins: 'Poppins', sans-serif;
+            --font-inter: 'Inter', sans-serif;
+            --font-montserrat: 'Montserrat', sans-serif;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.2);
+            --container-max: 1280px;
+            --header-height: 75px;
+            --footer-bg: #0F172A;
+        }
+
+        [data-theme="dark"] {
+            --primary: #F8FAFC;
+            --secondary: #F59E0B;
+            --accent: #334155;
+            --bg: #0F172A;
+            --text: #F1F5F9;
+            --text-light: #CBD5E1;
+            --white: #1E293B;
+            --card-bg: rgba(30, 41, 59, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+            --glass-bg: rgba(30, 41, 59, 0.7);
+            --nav-bg: rgba(15, 23, 42, 0.98);
+            --hero-overlay: rgba(0, 0, 0, 0.8);
+            --gradient-card: linear-gradient(145deg, rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.5));
+            --footer-bg: #0B0F19;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--secondary) var(--bg);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+
+        body {
+            font-family: var(--font-inter);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            transition: background-color var(--transition-smooth), color var(--transition-smooth);
+            cursor: none;
+        }
+
+        /* Custom Cursor */
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--secondary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transition: transform 0.15s ease, width 0.3s, height 0.3s;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: difference;
+            display: none;
+        }
+        .custom-cursor-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--secondary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.08s ease;
+            display: none;
+        }
+        .custom-cursor.hover {
+            width: 48px;
+            height: 48px;
+            background: rgba(245, 158, 11, 0.2);
+            border-color: var(--secondary);
+        }
+        @media (hover: hover) and (pointer: fine) {
+            body.custom-cursor-active, 
+            body.custom-cursor-active a, 
+            body.custom-cursor-active button, 
+            body.custom-cursor-active select, 
+            body.custom-cursor-active input, 
+            body.custom-cursor-active textarea, 
+            body.custom-cursor-active .btn, 
+            body.custom-cursor-active .service-card, 
+            body.custom-cursor-active .project-card, 
+            body.custom-cursor-active .accordion-header, 
+            body.custom-cursor-active .filter-btn {
+                cursor: none;
+            }
+        }
+
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0F172A; /* Always premium dark slate */
+            z-index: 100000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .preloader-icon {
+            width: 75px;
+            height: 75px;
+            border: 3px solid rgba(245, 158, 11, 0.15);
+            border-top-color: var(--secondary);
+            border-radius: 50%;
+            animation: spin 0.9s linear infinite;
+            margin-bottom: 0;
+        }
+        .preloader-text {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--secondary);
+            letter-spacing: 3px;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all var(--transition-smooth);
+            background: transparent;
+        }
+        .navbar.scrolled {
+            background: var(--nav-bg);
+            padding: 10px 40px;
+            box-shadow: var(--shadow-lg);
+            backdrop-filter: blur(20px);
+        }
+        .navbar-logo {
+            font-family: var(--font-montserrat);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #ffffff !important; /* Force white because navbar background is always dark overlay */
+            text-decoration: none;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10001;
+        }
+        .navbar-logo img {
+            height: 42px;
+            width: auto;
+            border-radius: 6px;
+            object-fit: contain;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform var(--transition);
+        }
+        .navbar-logo:hover img {
+            transform: scale(1.05) rotate(-2deg);
+        }
+        .navbar-logo span {
+            color: var(--secondary);
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            align-items: center;
+        }
+        .nav-menu li {
+            position: relative;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-family: var(--font-poppins);
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: all var(--transition);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--secondary);
+            background: rgba(245, 158, 11, 0.08);
+        }
+        .nav-cta {
+            background: var(--gradient-gold) !important;
+            color: #000 !important;
+            padding: 12px 24px !important;
+            border-radius: 30px !important;
+            font-weight: 700 !important;
+            letter-spacing: 1px !important;
+            transition: all var(--transition) !important;
+            box-shadow: 0 4px 20px rgba(245, 158, 11, 0.35);
+        }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5) !important;
+            background: var(--secondary) !important;
+            color: #000 !important;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+            z-index: 10001;
+            padding: 8px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            border-radius: 3px;
+            transition: all var(--transition);
+            display: block;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Services Dropdown */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--nav-bg);
+            border-radius: var(--radius);
+            padding: 10px 0;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: all var(--transition);
+            box-shadow: var(--shadow-xl);
+            backdrop-filter: blur(20px);
+            list-style: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-menu li:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 320px;
+                height: 100vh;
+                background: var(--nav-bg);
+                flex-direction: column;
+                padding: 100px 30px 30px;
+                gap: 5px;
+                transition: right var(--transition-smooth);
+                overflow-y: auto;
+                backdrop-filter: blur(25px);
+                box-shadow: var(--shadow-xl);
+                align-items: stretch;
+            }
+            .nav-menu.active {
+                right: 0;
+            }
+            .nav-menu li {
+                width: 100%;
+            }
+            .nav-menu a {
+                display: block;
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1rem;
+                text-align: left;
+            }
+            .nav-cta {
+                text-align: center !important;
+                margin-top: 15px;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: transparent;
+                box-shadow: none;
+                padding-left: 20px;
+                border: none;
+                display: none;
+            }
+            .nav-menu li.dropdown-open .dropdown-menu {
+                display: block;
+            }
+            .project-overlay {
+                opacity: 1;
+                background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 70%, transparent 100%);
+            }
+        }
+
+        /* Page Sections */
+        .page-section {
+            display: none;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        .page-section.active {
+            display: block;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero-video-bg,
+        .hero-img-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(0.5);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: var(--hero-overlay);
+            z-index: 1;
+        }
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 850px;
+            padding: 0 30px;
+        }
+        .hero-content h1 {
+            font-family: var(--font-montserrat);
+            font-weight: 900;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .hero-content h1 span {
+            color: var(--secondary);
+            display: inline-block;
+        }
+        .hero-content p {
+            font-size: clamp(1rem, 1.8vw, 1.25rem);
+            color: #cbd5e1;
+            margin-bottom: 35px;
+            font-family: var(--font-poppins);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all var(--transition);
+            cursor: pointer;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: #000;
+            box-shadow: 0 6px 25px rgba(245, 158, 11, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(245, 158, 11, 0.55);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .btn-outline:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-3px);
+        }
+        .btn-sm {
+            padding: 10px 24px;
+            font-size: 0.8rem;
+        }
+        .btn-ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        .btn-ripple:active::after {
+            width: 300px;
+            height: 300px;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            animation: bounceDown 2s infinite;
+            cursor: pointer;
+        }
+        .scroll-indicator span {
+            color: #fff;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            font-family: var(--font-poppins);
+        }
+        .scroll-indicator .arrow {
+            width: 30px;
+            height: 30px;
+            border-right: 2px solid var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+            transform: rotate(45deg);
+        }
+        @keyframes bounceDown {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(15px);
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 30px;
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header .badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.12);
+            color: var(--secondary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-family: var(--font-poppins);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .section-header h2 {
+            font-family: var(--font-montserrat);
+            font-weight: 800;
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 35px 20px;
+            box-shadow: var(--glass-shadow);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(15px);
+            transition: all var(--transition);
+        }
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--secondary);
+        }
+        .stat-number {
+            font-family: var(--font-montserrat);
+            font-weight: 900;
+            font-size: 3rem;
+            color: var(--secondary);
+            display: block;
+        }
+        .stat-label {
+            font-family: var(--font-poppins);
+            font-weight: 500;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        /* Service Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            padding: 35px 28px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(20px);
+            transition: all var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: var(--radius-lg);
+            background: linear-gradient(135deg, var(--secondary), transparent, var(--secondary));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity var(--transition-smooth);
+        }
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            transition: all var(--transition);
+        }
+        .service-card:hover .service-icon {
+            background: var(--secondary);
+            transform: scale(1.1) rotate(5deg);
+        }
+        .service-card h3 {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all var(--transition-smooth);
+            aspect-ratio: 4/3;
+        }
+        .project-card img,
+        .project-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .project-card:hover img,
+        .project-card:hover video {
+            transform: scale(1.08);
+        }
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-overlay h4 {
+            color: #fff;
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .project-overlay span {
+            color: var(--secondary);
+            font-size: 0.8rem;
+        }
+
+        /* Filter Buttons */
+        .filter-btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+        .filter-btn {
+            padding: 10px 22px;
+            border-radius: 30px;
+            border: 1px solid var(--glass-border);
+            background: var(--card-bg);
+            cursor: pointer;
+            font-family: var(--font-poppins);
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all var(--transition);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--secondary);
+            color: #000;
+            border-color: var(--secondary);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        /* Testimonial Slider */
+        .testimonial-slider {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+        .testimonial-slide img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+            margin-bottom: 15px;
+        }
+        .testimonial-slide .stars {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .testimonial-slide p {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .testimonial-slide h4 {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        .slider-dot.active {
+            background: var(--secondary);
+            width: 30px;
+            border-radius: 20px;
+        }
+
+        /* FAQ Accordion */
+        .accordion {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .accordion-item {
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+            overflow: hidden;
+            background: var(--card-bg);
+            transition: all var(--transition);
+        }
+        .accordion-header {
+            padding: 18px 24px;
+            cursor: pointer;
+            font-family: var(--font-montserrat);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all var(--transition);
+            font-size: 1rem;
+        }
+        .accordion-header:hover {
+            color: var(--secondary);
+        }
+        .accordion-icon {
+            font-size: 1.5rem;
+            transition: transform var(--transition);
+            color: var(--secondary);
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 24px;
+        }
+        .accordion-item.active .accordion-body {
+            max-height: 300px;
+            padding: 0 24px 18px;
+        }
+        .accordion-body p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            font-family: var(--font-poppins);
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--glass-border);
+            background: var(--card-bg);
+            font-family: var(--font-inter);
+            font-size: 0.95rem;
+            color: var(--text);
+            transition: all var(--transition);
+            outline: none;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-light) !important;
+            opacity: 0.6;
+        }
+        .form-group select option {
+            background: var(--white);
+            color: var(--text);
+        }
+        [data-theme="dark"] .service-card p,
+        [data-theme="dark"] .testimonial-slide p,
+        [data-theme="dark"] .timeline-item p {
+            color: #e2e8f0;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+        .form-error {
+            color: #ef4444;
+            font-size: 0.8rem;
+            margin-top: 4px;
+            display: none;
+        }
+        .form-group.error .form-error {
+            display: block;
+        }
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #ef4444;
+        }
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: var(--radius);
+            color: #22c55e;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-dark);
+            padding: 80px 30px;
+            text-align: center;
+            border-radius: var(--radius-xl);
+            margin: 60px auto;
+            max-width: var(--container-max);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            pointer-events: none;
+        }
+        .cta-section h2 {
+            color: #fff;
+            font-family: var(--font-montserrat);
+            font-weight: 800;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--footer-bg);
+            color: #e2e8f0;
+            padding: 80px 30px 40px;
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+            border-top: 1px solid var(--glass-border);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 35px;
+            max-width: var(--container-max);
+            margin: 0 auto 40px;
+        }
+        .footer h3 {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 18px;
+            font-size: 1.1rem;
+        }
+        .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color var(--transition);
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer a:hover {
+            color: var(--secondary);
+        }
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all var(--transition);
+            color: #fff;
+        }
+        .footer-social a:hover {
+            background: var(--secondary);
+            color: #000;
+            transform: translateY(-4px);
+        }
+        .footer-newsletter input {
+            padding: 12px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            width: 100%;
+            outline: none;
+            font-family: var(--font-inter);
+            margin-bottom: 10px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: #94a3b8;
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            font-size: 1.3rem;
+            border: none;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 25px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: var(--shadow-lg);
+            font-size: 1.6rem;
+            transition: all var(--transition);
+            animation: pulseFloat 2s infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        @keyframes pulseFloat {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 100px;
+            right: 25px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            cursor: pointer;
+            z-index: 998;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all var(--transition);
+            box-shadow: var(--shadow);
+        }
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+        }
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        .lightbox img,
+        .lightbox video {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-xl);
+            outline: none;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 2.5rem;
+            color: #fff;
+            cursor: pointer;
+            z-index: 10;
+            background: none;
+            border: none;
+        }
+
+        /* Calculator */
+        .calculator-box {
+            background: var(--card-bg);
+            border-radius: var(--radius-xl);
+            padding: 35px;
+            box-shadow: var(--glass-shadow);
+            border: 1px solid var(--glass-border);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .calculator-box h3 {
+            font-family: var(--font-montserrat);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calc-result {
+            text-align: center;
+            font-family: var(--font-montserrat);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(245, 158, 11, 0.08);
+            border-radius: var(--radius);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: var(--secondary);
+            border-radius: 50%;
+            border: 3px solid var(--bg);
+        }
+        .timeline-item h4 {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+        }
+        .timeline-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .about-preview-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-preview-side {
+            flex: 1;
+            min-width: 300px;
+        }
+        .spotlight-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: stretch;
+            padding: 40px;
+            border-radius: var(--radius-xl);
+        }
+        .spotlight-media {
+            flex: 1.2;
+            min-width: 320px;
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            min-height: 380px;
+            background: #000;
+        }
+        .spotlight-details {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .section {
+                padding: 60px 15px;
+            }
+            .hero {
+                min-height: 500px;
+            }
+            .hero-content h1 {
+                font-size: 2.1rem;
+            }
+            .scroll-indicator {
+                display: none !important;
+            }
+            .navbar {
+                padding: 12px 20px;
+            }
+            .navbar.scrolled {
+                padding: 8px 20px;
+            }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+                padding: 14px 25px;
+            }
+            .filter-btns {
+                gap: 8px;
+            }
+            .filter-btn {
+                padding: 8px 15px;
+                font-size: 0.75rem;
+            }
+            .spotlight-container {
+                padding: 20px;
+                gap: 20px;
+                border-radius: var(--radius-lg);
+            }
+            .spotlight-media {
+                min-width: 100%;
+                min-height: 250px;
+            }
+            .spotlight-details {
+                min-width: 100%;
+                gap: 15px;
+            }
+            .about-preview-container {
+                gap: 20px;
+            }
+            .about-preview-side {
+                min-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .section {
+                padding: 45px 12px;
+            }
+            .section-header h2 {
+                font-size: 1.6rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .stat-card {
+                padding: 20px 10px;
+            }
+            .stat-number {
+                font-size: 2.2rem;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .glass-card, .calculator-box, .contact-form {
+                padding: 20px 15px;
+            }
+            .calc-result {
+                font-size: 1.4rem;
+                padding: 10px;
+            }
+            .timeline {
+                padding-left: 25px;
+            }
+            .timeline::before {
+                left: 8px;
+            }
+            .timeline-item {
+                padding-left: 20px;
+                margin-bottom: 25px;
+            }
+            .timeline-item::before {
+                left: -24px;
+                top: 4px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        /* Utility */
+        .text-center {
+            text-align: center;
+        }
+        .mt-20 {
+            margin-top: 20px;
+        }
+        .mt-40 {
+            margin-top: 40px;
+        }
+        .hidden {
+            display: none !important;
+        }
+        .glass-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(15px);
+        }
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo-container" style="position: relative; width: 75px; height: 75px; margin-bottom: 20px;">
+            <div class="preloader-icon" style="position: absolute; inset: 0;"></div>
+            <img src="assets/logo.jpg" alt="KP Construction Logo" style="position: absolute; top: 12.5px; left: 12.5px; width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+        </div>
+        <div class="preloader-text">KP CONSTRUCTION</div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">🌙</button>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-logo" data-page="home">
+            <img src="assets/logo.jpg" alt="KP Construction Logo">
+            <span>KP</span> Construction
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#" data-page="home" class="active">Home</a></li>
+            <li><a href="#" data-page="about">About</a></li>
+            <li class="dropdown">
+                <a href="#" data-page="services">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-page="services">All Services</a></li>
+                    <li><a href="#" data-page="services">Residential</a></li>
+                    <li><a href="file:///Users/chandramondal/Documents/kp%20hu%20re%20/commercial" target="_blank">Commercial</a></li>
+                    <li><a href="#" data-page="services">Renovation</a></li>
+                </ul>
+            </li>
+            <li><a href="#" data-page="projects">Projects</a></li>
+            <li><a href="#" data-page="gallery">Gallery</a></li>
+            <li><a href="#" data-page="blog">Blog</a></li>
+            <li><a href="#" data-page="careers">Careers</a></li>
+            <li><a href="#" data-page="faq">FAQ</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+            <li><a href="#" data-page="contact" class="nav-cta">Get Quote</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <section class="page-section active" id="page-home">
+        <!-- Hero -->
+        <div class="hero" id="hero">
+            <img src="assets/hero_bg.jpg" class="hero-img-bg" alt="Construction Site Silhouette Hero Background">
+            <div class="hero-overlay"></div>
+            <canvas class="hero-particles" id="particleCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Building <span>Modern</span> Infrastructure</h1>
+                <p>Premium construction services with 15+ years of excellence. We build the future, one structure at a time.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary btn-ripple" data-page="contact">Get Started</a>
+                    <a href="#" class="btn btn-outline btn-ripple" data-page="projects">View Projects</a>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>SCROLL</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="section">
+            <div class="stats-grid">
+                <div class="stat-card fade-in"><span class="stat-number" data-count="250">0</span><span class="stat-number">+</span><span class="stat-label">Projects Completed</span></div>
+                <div class="stat-card fade-in"><span class="stat-number" data-count="15">0</span><span class="stat-number">+</span><span class="stat-label">Years Experience</span></div>
+                <div class="stat-card fade-in"><span class="stat-number" data-count="120">0</span><span class="stat-number">+</span><span class="stat-label">Expert Engineers</span></div>
+                <div class="stat-card fade-in"><span class="stat-number" data-count="500">0</span><span class="stat-number">+</span><span class="stat-label">Happy Clients</span></div>
+            </div>
+        </div>
+
+        <!-- About Preview -->
+        <div class="section" id="about-preview">
+            <div class="section-header"><span class="badge">About Us</span><h2>Excellence in Construction</h2><p>KP Construction is a premier construction company dedicated to delivering top-tier building solutions across residential, commercial, and industrial sectors.</p></div>
+            <div class="about-preview-container">
+                <div class="about-preview-side"><img src="assets/proj_img8.jpg" alt="Construction team" style="width:100%;border-radius:var(--radius-xl);box-shadow:var(--shadow-xl);" loading="lazy"></div>
+                <div class="about-preview-side">
+                    <p style="color:var(--text-light);margin-bottom:15px;line-height:1.9;">With over 15 years of industry experience, KP Construction has built a reputation for quality, reliability, and innovation. We use premium materials and modern technology to ensure every project exceeds expectations.</p>
+                    <a href="#" class="btn btn-primary btn-sm" data-page="about">Read More →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="section" id="services-preview">
+            <div class="section-header"><span class="badge">Our Services</span><h2>What We Offer</h2><p>Comprehensive construction solutions tailored to your needs.</p></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">🏠</div><h3>Residential Construction</h3><p>Custom homes built with precision and care for modern families.</p></div>
+                <div class="service-card"><div class="service-icon">🏢</div><h3>Commercial Buildings</h3><p>State-of-the-art commercial spaces designed for business success.</p></div>
+                <div class="service-card"><div class="service-icon">🎨</div><h3>Interior Design</h3><p>Elegant interiors that blend aesthetics with functionality.</p></div>
+                <div class="service-card"><div class="service-icon">🔧</div><h3>Renovation</h3><p>Transform existing spaces with our expert renovation services.</p></div>
+                <div class="service-card"><div class="service-icon">📐</div><h3>Architecture</h3><p>Innovative architectural designs that inspire and endure.</p></div>
+                <div class="service-card"><div class="service-icon">🏡</div><h3>Smart Homes</h3><p>Future-ready smart homes with integrated technology.</p></div>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="section" id="featured-projects">
+            <div class="section-header"><span class="badge">Portfolio</span><h2>Featured Projects</h2><p>Showcasing our finest work across various sectors.</p></div>
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" data-category="residential"><img src="assets/img1.jpg" alt="Luxury Villa" loading="lazy"><div class="project-overlay"><h4>Luxury Villa</h4><span>Mumbai • ₹2.5Cr • 2024</span></div></div>
+                <div class="project-card" data-category="industrial"><img src="assets/img3.jpg" alt="Active Slab Construction" loading="lazy"><div class="project-overlay"><h4>Slab Construction
+</h4><span>Pune • ₹35Cr • 2024</span></div></div>
+                <div class="project-card" data-category="residential"><img src="assets/img2.jpg" alt="Modern Apartments" loading="lazy"><div class="project-overlay"><h4>Modern Apartments</h4><span>Bangalore • ₹8Cr • 2023</span></div></div>
+                <div class="project-card" data-category="commercial"><img src="assets/proj_img9.jpg" alt="Metropolitan Complex" loading="lazy"><div class="project-overlay"><h4>Metropolitan Complex</h4><span>Kolkata • ₹25Cr • Under Construction</span></div></div>
+            </div>
+        </div>
+
+        <!-- Project Spotlight Section -->
+        <div class="section" id="project-spotlight">
+            <div class="section-header">
+                <span class="badge">Ongoing Project Spotlight</span>
+                <h2>The Metropolitan Complex</h2>
+                <p>An exclusive tour of our state-of-the-art commercial construction project in Kolkata.</p>
+            </div>
+            <div class="spotlight-container glass-card">
+                <div class="spotlight-media">
+                    <video src="assets/proj_vid2.mp4" poster="assets/proj_img9.jpg" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);"></video>
+                    <div style="position: absolute; bottom: 20px; right: 20px; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 8px 12px; border-radius: 20px; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; backdrop-filter: blur(5px); z-index: 2;">
+                        <span style="display: inline-block; width: 8px; height: 8px; background: #ef4444; border-radius: 50%; animation: pulse 1s infinite;"></span>
+                        Live Site Tour (Muted)
+                    </div>
+                </div>
+                <div class="spotlight-details">
+                    <div>
+                        <span style="font-family: var(--font-poppins); font-weight: 700; color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Kolkata, West Bengal</span>
+                        <h3 style="font-family: var(--font-montserrat); font-weight: 800; font-size: 1.8rem; margin: 5px 0 15px; color: var(--text);">Premium Commercial Space</h3>
+                        <p style="color: var(--text-light); line-height: 1.8; font-size: 0.95rem;">
+                            Currently under construction, <strong>The Metropolitan Complex</strong> represents a milestone in commercial architecture. Engineered with superior grade steel framework (shuttering & R.C.C. frame stage) and high-load foundation parameters, it offers flexible retail and office spaces designed for modern corporate standards.
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 15px 0;">
+                        <div>
+                            <span style="font-size: 0.8rem; color: var(--text-light); display: block;">Total Area</span>
+                            <strong style="color: var(--text); font-size: 1.1rem;">45,000+ Sq. Ft.</strong>
+                        </div>
+                        <div>
+                            <span style="font-size: 0.8rem; color: var(--text-light); display: block;">Structure Type</span>
+                            <strong style="color: var(--text); font-size: 1.1rem;">Commercial RCC Frame</strong>
+                        </div>
+                        <div>
+                            <span style="font-size: 0.8rem; color: var(--text-light); display: block;">Unit Sizes</span>
+                            <strong style="color: var(--text); font-size: 1.1rem;">1,000 & 2,000 SFT</strong>
+                        </div>
+                        <div>
+                            <span style="font-size: 0.8rem; color: var(--text-light); display: block;">Project Status</span>
+                            <strong style="color: var(--secondary); font-size: 1.1rem;">RCC Frame & Brickwork</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-primary btn-sm" data-page="gallery" style="align-self: flex-start;">View Construction Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="section">
+            <div class="section-header"><span class="badge">Why Us</span><h2>Why Choose KP Construction</h2></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">👷</div><h3>Expert Engineers</h3><p>Highly skilled professionals with decades of combined experience.</p></div>
+                <div class="service-card"><div class="service-icon">🏗️</div><h3>Premium Materials</h3><p>We source only the finest materials for lasting durability.</p></div>
+                <div class="service-card"><div class="service-icon">⚡</div><h3>Fast Delivery</h3><p>On-time project completion without compromising quality.</p></div>
+                <div class="service-card"><div class="service-icon">🛡️</div><h3>Safety Standards</h3><p>Strict adherence to international safety protocols.</p></div>
+                <div class="service-card"><div class="service-icon">💰</div><h3>Affordable Pricing</h3><p>Competitive rates with transparent cost breakdowns.</p></div>
+                <div class="service-card"><div class="service-icon">🤖</div><h3>Modern Technology</h3><p>Leveraging cutting-edge tech for superior results.</p></div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section">
+            <div class="section-header"><span class="badge">Testimonials</span><h2>What Our Clients Say</h2></div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-slide"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" loading="lazy"><div class="stars">★★★★★</div><p>"KP Construction built our dream home. Exceptional quality and attention to detail. Highly recommended!"</p><h4>Rajesh Sharma</h4><span style="color:var(--text-light);">Homeowner, Mumbai</span></div>
+                    <div class="testimonial-slide"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" loading="lazy"><div class="stars">★★★★★</div><p>"Our corporate office was delivered ahead of schedule. The team's professionalism is unmatched."</p><h4>Priya Patel</h4><span style="color:var(--text-light);">CEO, Delhi</span></div>
+                    <div class="testimonial-slide"><img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" loading="lazy"><div class="stars">★★★★★</div><p>"From design to execution, everything was flawless. KP Construction sets the gold standard."</p><h4>Amit Verma</h4><span style="color:var(--text-light);">Builder, Pune</span></div>
+                </div>
+            </div>
+            <div class="slider-nav" id="sliderNav">
+                <span class="slider-dot active" data-index="0"></span><span class="slider-dot" data-index="1"></span><span class="slider-dot" data-index="2"></span>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section">
+            <div class="section-header"><span class="badge">FAQ</span><h2>Frequently Asked Questions</h2></div>
+            <div class="accordion" id="accordion">
+                <div class="accordion-item"><div class="accordion-header">What areas do you serve? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>We serve all major cities across India including Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Pune, and surrounding regions.</p></div></div>
+                <div class="accordion-item"><div class="accordion-header">How long does a typical project take? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>Timelines vary based on project scope. A residential home typically takes 8-14 months, while commercial projects may take 12-24 months.</p></div></div>
+                <div class="accordion-item"><div class="accordion-header">Do you provide free consultations? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>Yes! We offer free initial consultations to understand your requirements and provide preliminary estimates.</p></div></div>
+            </div>
+        </div>
+
+        <!-- Cost Calculator -->
+        <div class="section">
+            <div class="section-header"><span class="badge">Calculator</span><h2>Construction Cost Estimator</h2></div>
+            <div class="calculator-box">
+                <h3>Get an Instant Estimate</h3>
+                <div class="form-group"><label>Built-up Area (sq. ft.)</label><input type="number" id="calcArea" placeholder="e.g., 1500" min="100" max="50000"></div>
+                <div class="form-group"><label>Number of Floors</label><select id="calcFloors"><option value="1">1 Floor</option><option value="2">2 Floors</option><option value="3">3 Floors</option><option value="4+">4+ Floors</option></select></div>
+                <div class="form-group"><label>Material Quality</label><select id="calcQuality"><option value="standard">Standard (₹1,500/sqft)</option><option value="premium">Premium (₹2,500/sqft)</option><option value="luxury">Luxury (₹4,000/sqft)</option></select></div>
+                <button class="btn btn-primary" onclick="calculateCost()" style="width:100%;">Calculate Estimate</button>
+                <div class="calc-result" id="calcResult">Estimated Cost: ₹ --</div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Ready to Build Your Dream?</h2>
+            <p>Let's discuss your project. Our team is ready to bring your vision to life.</p>
+            <a href="#" class="btn btn-primary btn-ripple" data-page="contact">Get Free Quote →</a>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT PAGE ==================== -->
+    <section class="page-section" id="page-about">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">About</span><h2>Our Story</h2><p>Building excellence since 2009.</p></div>
+            <div class="glass-card" style="max-width:800px;margin:0 auto;">
+                <p style="line-height:2;color:var(--text-light);">KP Construction was founded with a vision to revolutionize the construction industry in India. Starting from a small team of 5 engineers, we have grown into a powerhouse of 120+ professionals delivering projects across the nation. Our commitment to quality, transparency, and innovation has earned us the trust of 500+ happy clients.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header"><h2>Our Journey</h2></div>
+            <div class="timeline">
+                <div class="timeline-item"><h4>2009</h4><p>Company founded in Mumbai with a small team.</p></div>
+                <div class="timeline-item"><h4>2012</h4><p>Completed first large-scale commercial project.</p></div>
+                <div class="timeline-item"><h4>2016</h4><p>Expanded to 5 major cities across India.</p></div>
+                <div class="timeline-item"><h4>2020</h4><p>Reached 200+ completed projects milestone.</p></div>
+                <div class="timeline-item"><h4>2024</h4><p>Recognized as one of India's top construction firms.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES PAGE ==================== -->
+    <section class="page-section" id="page-services">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Services</span><h2>Our Expertise</h2></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">🏠</div><h3>House Construction</h3><p>Custom residential projects from foundation to finish.</p></div>
+                <div class="service-card"><div class="service-icon">🏢</div><h3>Commercial Buildings</h3><p>Office complexes, retail spaces, and corporate towers.</p></div>
+                <div class="service-card"><div class="service-icon">🔧</div><h3>Renovation</h3><p>Complete renovation and remodeling services.</p></div>
+                <div class="service-card"><div class="service-icon">🎨</div><h3>Interior Design</h3><p>Premium interior solutions for homes and offices.</p></div>
+                <div class="service-card"><div class="service-icon">🌉</div><h3>Civil Engineering</h3><p>Infrastructure, bridges, and heavy civil works.</p></div>
+                <div class="service-card"><div class="service-icon">🌳</div><h3>Landscaping</h3><p>Beautiful outdoor spaces and garden designs.</p></div>
+                <div class="service-card"><div class="service-icon">🖌️</div><h3>Painting</h3><p>Professional painting and finishing services.</p></div>
+                <div class="service-card"><div class="service-icon">🏗️</div><h3>Steel Structure</h3><p>Robust steel frameworks for industrial projects.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS PAGE ==================== -->
+    <section class="page-section" id="page-projects">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Portfolio</span><h2>All Projects</h2></div>
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid2">
+                <div class="project-card" data-category="residential"><img src="assets/img1.jpg" alt="Project" loading="lazy"><div class="project-overlay"><h4>Luxury Villa</h4><span>Mumbai • ₹2.5Cr</span></div></div>
+                <div class="project-card" data-category="industrial"><img src="assets/img3.jpg" alt="Project" loading="lazy"><div class="project-overlay"><h4>Slab Construction</h4><span>Pune • ₹35Cr</span></div></div>
+                <div class="project-card" data-category="residential"><img src="assets/img2.jpg" alt="Project" loading="lazy"><div class="project-overlay"><h4>Modern Apartments</h4><span>Bangalore • ₹8Cr</span></div></div>
+                <div class="project-card" data-category="commercial"><img src="assets/proj_img9.jpg" alt="Project" loading="lazy"><div class="project-overlay"><h4>Metropolitan Complex</h4><span>Kolkata • ₹25Cr</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY PAGE ==================== -->
+    <section class="page-section" id="page-gallery">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Gallery</span><h2>Photo & Video Gallery</h2></div>
+            <div class="filter-btns" style="margin-bottom: 30px;">
+                <button class="filter-btn active" data-filter="all">All Media</button>
+                <button class="filter-btn" data-filter="construction">Ongoing Projects</button>
+                <button class="filter-btn" data-filter="completed">Completed Projects</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Videos -->
+                <div class="project-card gallery-video" data-category="construction" style="position: relative; overflow: hidden; border-radius: var(--radius-lg); cursor: pointer;">
+                    <video src="assets/proj_vid1.mp4" loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);"></video>
+                    <div style="position: absolute; inset: 0; background: rgba(15, 23, 42, 0.4); display: flex; align-items: center; justify-content: center; transition: background 0.3s;" onmouseenter="this.style.background='rgba(15, 23, 42, 0.1)'" onmouseleave="this.style.background='rgba(15, 23, 42, 0.4)'">
+                        <span style="font-size: 2rem; color: #fff; background: var(--secondary); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">▶</span>
+                    </div>
+                </div>
+                <div class="project-card gallery-video" data-category="construction" style="position: relative; overflow: hidden; border-radius: var(--radius-lg); cursor: pointer;">
+                    <video src="assets/proj_vid2.mp4" loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);"></video>
+                    <div style="position: absolute; inset: 0; background: rgba(15, 23, 42, 0.4); display: flex; align-items: center; justify-content: center; transition: background 0.3s;" onmouseenter="this.style.background='rgba(15, 23, 42, 0.1)'" onmouseleave="this.style.background='rgba(15, 23, 42, 0.4)'">
+                        <span style="font-size: 2rem; color: #fff; background: var(--secondary); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">▶</span>
+                    </div>
+                </div>
+                
+                <!-- Images -->
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img1.jpg" alt="Metropolitan Complex Construction Progress" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img2.jpg" alt="Support Structures & Centering" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img3.jpg" alt="Roadside Construction Framework" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img4.jpg" alt="Building Skeletal RCC Frame" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img5.jpg" alt="Masonry Brickwork Stage" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img6.jpg" alt="Material Unloading & Delivery" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img7.jpg" alt="Staircase Framework & Workers" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img8.jpg" alt="Concrete Frame Structure View" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img9.jpg" alt="Front Skeleton & Ramps" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img10.jpg" alt="Street Side View of Metropolitan Complex" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img11.jpg" alt="The Metropolitan Complex Billboard Sign" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="construction"><img src="assets/proj_img12.jpg" alt="Ground Entrance Shutter and Stairs" loading="lazy"></div>
+                
+                <!-- Completed Projects -->
+                <div class="project-card gallery-img" data-category="completed"><img src="assets/img1.jpg" alt="Completed Project" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="completed"><img src="assets/img2.jpg" alt="Completed Project" loading="lazy"></div>
+                <div class="project-card gallery-img" data-category="completed"><img src="assets/img3.jpg" alt="Completed Project" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG PAGE ==================== -->
+    <section class="page-section" id="page-blog">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Blog</span><h2>Construction Insights</h2></div>
+            <div class="services-grid">
+                <div class="service-card"><h3>🏠 Smart Home Trends 2024</h3><p>Discover the latest in smart home technology and automation for modern living.</p><a href="#" style="color:var(--secondary);">Read More →</a></div>
+                <div class="service-card"><h3>🏗️ Sustainable Building Materials</h3><p>Eco-friendly materials that are revolutionizing the construction industry.</p><a href="#" style="color:var(--secondary);">Read More →</a></div>
+                <div class="service-card"><h3>🎨 Interior Design Tips</h3><p>Expert tips to transform your living spaces with contemporary design ideas.</p><a href="#" style="color:var(--secondary);">Read More →</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CAREERS PAGE ==================== -->
+    <section class="page-section" id="page-careers">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Careers</span><h2>Join Our Team</h2></div>
+            <div class="services-grid">
+                <div class="service-card"><h3>👷 Site Engineer</h3><p>Mumbai • Full-time • 3+ years experience</p><button class="btn btn-primary btn-sm mt-20">Apply Now</button></div>
+                <div class="service-card"><h3>📐 Architect</h3><p>Delhi • Full-time • 5+ years experience</p><button class="btn btn-primary btn-sm mt-20">Apply Now</button></div>
+                <div class="service-card"><h3>📋 Project Manager</h3><p>Bangalore • Full-time • 7+ years experience</p><button class="btn btn-primary btn-sm mt-20">Apply Now</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ PAGE ==================== -->
+    <section class="page-section" id="page-faq">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">FAQ</span><h2>All Questions</h2></div>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-item"><div class="accordion-header">What areas do you serve? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>All major Indian cities including Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Pune, and more.</p></div></div>
+                <div class="accordion-item"><div class="accordion-header">How do I get a quote? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>Fill out our contact form or call us directly for a free consultation and estimate.</p></div></div>
+                <div class="accordion-item"><div class="accordion-header">What warranty do you offer? <span class="accordion-icon">+</span></div><div class="accordion-body"><p>We offer a 5-year structural warranty on all our construction projects.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT PAGE ==================== -->
+    <section class="page-section" id="page-contact">
+        <div style="padding-top:100px;"></div>
+        <div class="section">
+            <div class="section-header"><span class="badge">Contact</span><h2>Get In Touch</h2></div>
+            <div class="contact-form glass-card" id="contactFormContainer">
+                <form id="contactForm" novalidate>
+                    <div class="form-group"><label>Full Name *</label><input type="text" id="cfName" placeholder="Your full name" required><span class="form-error">Please enter your name</span></div>
+                    <div class="form-group"><label>Email *</label><input type="email" id="cfEmail" placeholder="your@email.com" required><span class="form-error">Please enter a valid email</span></div>
+                    <div class="form-group"><label>Phone *</label><input type="tel" id="cfPhone" placeholder="+91 9876543210" required pattern="[0-9+\s]{10,15}"><span class="form-error">Please enter a valid phone number</span></div>
+                    <div class="form-group"><label>Service</label><select id="cfService"><option>Residential Construction</option><option>Commercial Buildings</option><option>Renovation</option><option>Interior Design</option><option>Other</option></select></div>
+                    <div class="form-group"><label>Message *</label><textarea id="cfMessage" placeholder="Describe your project..." required></textarea><span class="form-error">Please enter your message</span></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry →</button>
+                </form>
+                <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                    <img src="assets/logo.jpg" alt="KP Construction Logo" style="height: 48px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    <h3 style="margin-bottom: 0;">KP Construction</h3>
+                </div>
+                <p style="color:#94a3b8;font-size:0.9rem; margin-top: 10px;">Building modern infrastructure with excellence since 2009. Premium construction services across India.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="LinkedIn">💼</a><a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div><h3>Quick Links</h3><a href="#" data-page="home">Home</a><a href="#" data-page="about">About</a><a href="#" data-page="services">Services</a><a href="#" data-page="projects">Projects</a><a href="#" data-page="contact">Contact</a></div>
+            <div><h3>Services</h3><a href="#" data-page="services">Residential</a><a href="#" data-page="services">Commercial</a><a href="#" data-page="services">Renovation</a><a href="#" data-page="services">Interior Design</a></div>
+            <div>
+                <h3>Newsletter</h3>
+                <p style="color:#94a3b8;font-size:0.85rem;">Subscribe for construction tips and updates.</p>
+                <div class="footer-newsletter"><input type="email" placeholder="Your email"><button class="btn btn-primary btn-sm" style="width:100%;">Subscribe</button></div>
+            </div>
+        </div>
+        <div class="footer-bottom">© <span id="footerYear">2026</span> KP Construction Company Private Limited. All rights reserved.</div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">💬</a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <img src="" alt="Lightbox" id="lightboxImg" style="display: none;">
+        <video src="" id="lightboxVideo" controls autoplay style="display: none; max-width: 90%; max-height: 80%; border-radius: var(--radius-lg); border: 2px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-xl); outline: none;"></video>
+    </div>
+
+    <script>
+        // ==================== MAIN JAVASCRIPT ====================
+        (function() {
+            // DOM Elements
+            const preloader = document.getElementById('preloader');
+            const navbar = document.getElementById('navbar');
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const backToTop = document.getElementById('backToTop');
+            const themeToggle = document.getElementById('themeToggle');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxClose = document.getElementById('lightboxClose');
+            const cursor = document.querySelector('.custom-cursor');
+            const cursorDot = document.querySelector('.custom-cursor-dot');
+            const particleCanvas = document.getElementById('particleCanvas');
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const testimonialTrack = document.getElementById('testimonialTrack');
+            const sliderNav = document.getElementById('sliderNav');
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            const html = document.documentElement;
+
+            // ==================== INITIAL SETUP & PRELOADER ====================
+            const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            
+            // Set dynamic year in footer
+            const yearEl = document.getElementById('footerYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.classList.add('hidden');
+                    
+                    if (isTouchDevice) {
+                        document.body.style.cursor = 'auto';
+                        if (cursor) cursor.style.display = 'none';
+                        if (cursorDot) cursorDot.style.display = 'none';
+                    } else {
+                        document.body.classList.add('custom-cursor-active');
+                        if (cursor) cursor.style.display = 'block';
+                        if (cursorDot) cursorDot.style.display = 'block';
+                    }
+                    animateStats();
+                }, 1200);
+            });
+
+            // ==================== CUSTOM CURSOR ====================
+            document.addEventListener('mousemove', (e) => {
+                if (cursor) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                }
+                if (cursorDot) {
+                    cursorDot.style.left = e.clientX + 'px';
+                    cursorDot.style.top = e.clientY + 'px';
+                }
+            });
+            document.addEventListener('mousedown', () => {
+                if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(0.7)';
+            });
+            document.addEventListener('mouseup', () => {
+                if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+            document.querySelectorAll('a, button, .btn, .service-card, .project-card, .accordion-header, .filter-btn, input, textarea, select')
+                .forEach(el => {
+                    el.addEventListener('mouseenter', () => { if (cursor) cursor.classList.add('hover'); });
+                    el.addEventListener('mouseleave', () => { if (cursor) cursor.classList.remove('hover'); });
+                });
+
+            // ==================== NAVBAR SCROLL ====================
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 60) {
+                    navbar.classList.add('scrolled');
+                    backToTop.classList.add('visible');
+                } else {
+                    navbar.classList.remove('scrolled');
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            // ==================== HAMBURGER MENU ====================
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // ==================== PAGE NAVIGATION ====================
+            document.querySelectorAll('[data-page]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const page = this.getAttribute('data-page');
+                    if (page && document.getElementById('page-' + page)) {
+                        e.preventDefault();
+                        switchPage(page);
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                        }
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            function switchPage(page) {
+                document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+                const target = document.getElementById('page-' + page);
+                if (target) target.classList.add('active');
+                document.querySelectorAll('.nav-menu a[data-page]').forEach(a => a.classList.remove('active'));
+                const navLink = document.querySelector(`.nav-menu a[data-page="${page}"]`);
+                if (navLink) navLink.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // ==================== BACK TO TOP ====================
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            scrollIndicator?.addEventListener('click', () => {
+                document.getElementById('about-preview')?.scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // ==================== DARK MODE ====================
+            const savedTheme = localStorage.getItem('kp-theme') || 'light';
+            html.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+            themeToggle.addEventListener('click', () => {
+                const current = html.getAttribute('data-theme');
+                const next = current === 'light' ? 'dark' : 'light';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('kp-theme', next);
+                updateThemeIcon(next);
+            });
+
+            function updateThemeIcon(theme) {
+                themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+            }
+
+            // ==================== STATS COUNTER ====================
+            function animateStats() {
+                document.querySelectorAll('.stat-number[data-count]').forEach(el => {
+                    const target = parseInt(el.getAttribute('data-count'));
+                    const duration = 2000;
+                    const start = performance.now();
+
+                    function update(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        el.textContent = Math.floor(eased * target);
+                        if (progress < 1) requestAnimationFrame(update);
+                        else el.textContent = target;
+                    }
+                    requestAnimationFrame(update);
+                });
+            }
+
+            // ==================== TESTIMONIAL SLIDER ====================
+            let currentSlide = 0;
+            const totalSlides = document.querySelectorAll('.testimonial-slide').length;
+            const dots = document.querySelectorAll('.slider-dot');
+
+            function goToSlide(index) {
+                currentSlide = index;
+                if (testimonialTrack) testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+            }
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => goToSlide(parseInt(dot.getAttribute('data-index'))));
+            });
+            setInterval(() => {
+                goToSlide((currentSlide + 1) % totalSlides);
+            }, 4500);
+
+            // Testimonial Swipe Detection
+            const slider = document.getElementById('testimonialSlider');
+            if (slider) {
+                let startX = 0;
+                let endX = 0;
+                slider.addEventListener('touchstart', e => {
+                    startX = e.changedTouches[0].screenX;
+                }, { passive: true });
+                slider.addEventListener('touchend', e => {
+                    endX = e.changedTouches[0].screenX;
+                    const diff = startX - endX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            goToSlide((currentSlide + 1) % totalSlides);
+                        } else {
+                            goToSlide((currentSlide - 1 + totalSlides) % totalSlides);
+                        }
+                    }
+                }, { passive: true });
+            }
+
+            // ==================== ACCORDION ====================
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    const isActive = item.classList.contains('active');
+                    document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove(
+                        'active'));
+                    if (!isActive) item.classList.add('active');
+                });
+            });
+
+            // ==================== PROJECT FILTERS ====================
+            document.querySelectorAll('.filter-btns').forEach(container => {
+                const buttons = container.querySelectorAll('.filter-btn');
+                const section = container.closest('.section') || container.closest('.page-section');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const filter = this.getAttribute('data-filter');
+                        buttons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        if (filter === 'commercial') {
+                            window.open('file:///Users/chandramondal/Documents/kp%20hu%20re%20/commercial', '_blank');
+                        }
+
+                        section.querySelectorAll('.project-card[data-category]').forEach(card => {
+                            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                                card.style.display = 'block';
+                                card.style.animation = 'fadeInUp 0.5s ease forwards';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+
+            // ==================== SERVICE CARD CLICKS ====================
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const title = this.querySelector('h3')?.textContent || '';
+                    if (title.toLowerCase().includes('commercial')) {
+                        window.open('file:///Users/chandramondal/Documents/kp%20hu%20re%20/commercial', '_blank');
+                    }
+                });
+            });
+
+            // ==================== LIGHTBOX ====================
+            const lightboxVideo = document.getElementById('lightboxVideo');
+            
+            document.querySelectorAll('.gallery-img img, .project-card img').forEach(img => {
+                img.addEventListener('click', function() {
+                    lightboxImg.src = this.src;
+                    lightboxImg.style.display = 'block';
+                    lightboxVideo.style.display = 'none';
+                    lightboxVideo.src = '';
+                    lightbox.classList.add('active');
+                });
+            });
+
+            document.querySelectorAll('.gallery-video').forEach(videoCard => {
+                videoCard.addEventListener('click', function() {
+                    const videoSrc = this.querySelector('video').src;
+                    lightboxVideo.src = videoSrc;
+                    lightboxVideo.style.display = 'block';
+                    lightboxImg.style.display = 'none';
+                    lightboxImg.src = '';
+                    lightbox.classList.add('active');
+                });
+            });
+
+            const closeLightbox = () => {
+                lightbox.classList.remove('active');
+                lightboxVideo.pause();
+                lightboxVideo.src = '';
+            };
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeLightbox();
+            });
+
+            // ==================== COST CALCULATOR ====================
+            window.calculateCost = function() {
+                const area = parseFloat(document.getElementById('calcArea')?.value) || 0;
+                const floors = document.getElementById('calcFloors')?.value || '1';
+                const quality = document.getElementById('calcQuality')?.value || 'standard';
+                const floorMultiplier = floors === '1' ? 1 : floors === '2' ? 2 : floors === '3' ? 3 : 4.5;
+                const rateMap = { standard: 1500, premium: 2500, luxury: 4000 };
+                const rate = rateMap[quality] || 1500;
+                const total = area * floorMultiplier * rate;
+                const formatted = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR',
+                    maximumFractionDigits: 0 }).format(total);
+                const resultEl = document.getElementById('calcResult');
+                if (resultEl) resultEl.textContent = `Estimated Cost: ${formatted}`;
+            };
+
+            // ==================== CONTACT FORM VALIDATION ====================
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    let valid = true;
+                    const name = document.getElementById('cfName');
+                    const email = document.getElementById('cfEmail');
+                    const phone = document.getElementById('cfPhone');
+                    const message = document.getElementById('cfMessage');
+
+                    [name, email, phone, message].forEach(field => {
+                        const group = field.closest('.form-group');
+                        group.classList.remove('error');
+                        if (!field.value.trim()) {
+                            group.classList.add('error');
+                            valid = false;
+                        }
+                    });
+                    if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                        email.closest('.form-group').classList.add('error');
+                        valid = false;
+                    }
+                    if (phone && phone.value && !/^[0-9+\s]{10,15}$/.test(phone.value.replace(/[\s-]/g,
+                            ''))) {
+                        phone.closest('.form-group').classList.add('error');
+                        valid = false;
+                    }
+                    if (valid) {
+                        contactForm.style.display = 'none';
+                        if (formSuccess) formSuccess.style.display = 'block';
+                        setTimeout(() => {
+                            contactForm.style.display = 'block';
+                            if (formSuccess) formSuccess.style.display = 'none';
+                            contactForm.reset();
+                        }, 3500);
+                    }
+                });
+            }
+
+            // ==================== PARTICLES ====================
+            if (particleCanvas) {
+                const ctx = particleCanvas.getContext('2d');
+                particleCanvas.width = window.innerWidth;
+                particleCanvas.height = window.innerHeight;
+                const particles = [];
+                for (let i = 0; i < 50; i++) {
+                    particles.push({
+                        x: Math.random() * particleCanvas.width,
+                        y: Math.random() * particleCanvas.height,
+                        vx: (Math.random() - 0.5) * 0.8,
+                        vy: (Math.random() - 0.5) * 0.8,
+                        r: Math.random() * 2 + 1,
+                        alpha: Math.random() * 0.5 + 0.2,
+                    });
+                }
+
+                function drawParticles() {
+                    ctx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+                    particles.forEach(p => {
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        if (p.x < 0) p.x = particleCanvas.width;
+                        if (p.x > particleCanvas.width) p.x = 0;
+                        if (p.y < 0) p.y = particleCanvas.height;
+                        if (p.y > particleCanvas.height) p.y = 0;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(245,158,11,${p.alpha})`;
+                        ctx.fill();
+                    });
+                    requestAnimationFrame(drawParticles);
+                }
+                drawParticles();
+                window.addEventListener('resize', () => {
+                    particleCanvas.width = window.innerWidth;
+                    particleCanvas.height = window.innerHeight;
+                });
+            }
+
+            // ==================== SCROLL REVEAL ====================
+            const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.service-card, .stat-card, .project-card, .glass-card, .timeline-item')
+                .forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(40px)';
+                    el.style.transition = 'all 0.6s cubic-bezier(0.4,0,0.2,1)';
+                    observer.observe(el);
+                });
+
+            // ==================== MOBILE DROPDOWN ====================
+            document.querySelectorAll('.nav-menu li.dropdown > a').forEach(dropLink => {
+                dropLink.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 1024) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle('dropdown-open');
+                    }
+                });
+            });
+
+            // ==================== INITIAL SETUP ====================
+            console.log('%c🏗️ KP Construction %cPremium Website Ready',
+                'font-size:1.5rem;color:#F59E0B;font-weight:bold;',
+                'font-size:1rem;color:#0F172A;');
+            console.log('%cBuilt with vanilla HTML, CSS & JavaScript', 'color:#4B5563;');
+            console.log('%cAll features active: Dark Mode | Particles | Lightbox | Calculator | Slider | Filters | Validation',
+                'color:#22c55e;');
+
+        })();
+    </script>
+</body>
+</html>
